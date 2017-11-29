@@ -1,21 +1,17 @@
-
 runtime: python27
 service: default
 threadsafe: true
 
 handlers:
 - url: /
- static_files: dist/index.html
- upload: dist/index.html
+ static_files:index.html
+ upload:index.html
  
+- url:/styles/
+ static_dir:styles
+	
+- url:/assets/img
+ static_dir:assets/img
 
-- url: dist/styles/
- static_dir: dist/styles
-
-
-- url: dist/assets/img
- static_dir: /dist/assets/img
-
-
-- url: dist/js/
- static_dir: dist/js
+- url:/js/
+ static_dir:js
