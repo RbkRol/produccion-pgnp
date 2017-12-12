@@ -1,0 +1,11 @@
+runtime: php55
+service: servicio
+threadsafe: true
+
+handlers:
+  
+- url: /(.+)
+  script: php/\1
+  
+
+  
