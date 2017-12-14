@@ -9347,9 +9347,9 @@ webpackJsonp([1], {
                 }
 
                 return t.prototype.getUsers = function (t, e) {
-                    return this.http.get("http://localhost/php/validarUsuario.php/?correo=" + t + "&password=" + e)
+                    return this.http.get("http://gnp-fuentes-ext-proveedores.appspot.com/php/validarUsuario.php/?correo=" + t + "&password=" + e)
                 }, t.prototype.getPass = function (t) {
-                    return this.http.get("http://localhost/php/recuperarpass.php/?correo=" + t)
+                    return this.http.get("http://gnp-fuentes-ext-proveedores.appspot.com/php/recuperarpass.php/?correo=" + t)
                 }, t
             }(), xa = function () {
                 function t(t, e) {
@@ -9392,7 +9392,7 @@ webpackJsonp([1], {
                     var e = new FormData;
                     return e.append("lineaNegocio", t.lineaNegocio), e.append("tipoArchivo", t.tipoArchivo), e.append("anio", t.anio), e.append("mes", t.mes), e.append("archivo", t.archivo), e
                 }, t.prototype.agregarDatos = function (t) {
-                    return this.http.post("http://localhost/php/insertarDatos.php", t)
+                    return this.http.post("http://gnp-fuentes-ext-proveedores.appspot.com/php/insertarDatos.php", t)
                 }, t
             }(), Na = new nr.p("cdk-dir-doc"), ja = function () {
                 return function (t) {
@@ -11941,11 +11941,11 @@ webpackJsonp([1], {
                 }
 
                 return t.prototype.getServAux = function () {
-                    return this.http.get("http://localhost/php/layoutSA.php")
+                    return this.http.get("http://gnp-fuentes-ext-proveedores.appspot.com/php/layoutSA.php")
                 }, t.prototype.getCPM = function () {
-                    return this.http.get("http://localhost/php/layoutCPM.php")
+                    return this.http.get("http://gnp-fuentes-ext-proveedores.appspot.com/php/layoutCPM.php")
                 }, t.prototype.getATC = function () {
-                    return this.http.get("http://localhost/php/layoutATC.php")
+                    return this.http.get("http://gnp-fuentes-ext-proveedores.appspot.com/php/layoutATC.php")
                 }, t
             }(), Zu = function () {
                 function t(t, e) {
