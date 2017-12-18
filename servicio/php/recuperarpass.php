@@ -34,7 +34,7 @@ else{
 							<p> 
 							<b>Contacta con el administrador del sistema para crear una nueva</b>. 
 							</p> 
-							<img src="https://jobs.gnp.com.mx/sites/gnp/images/site-logo.jpg"  width="30%">
+							<img src="https://gnp-fuentes-ext-proveedores.appspot.com/img/gnPicono.png"  width="20%">
 						</body> 
 					</html> 
 				'; 

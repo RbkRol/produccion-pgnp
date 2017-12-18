@@ -10,7 +10,7 @@ include("conexion.php");
         }
         else 
         { 
-            $resultado=mysqli_query($con,"SELECT correo,password,nombre FROM usr WHERE correo='" . $_GET['correo'] . "' AND password='". $_GET['password'] . "' AND estatus=1");
+            $resultado=mysqli_query($con,"SELECT correo,password,nombre,ATC,CPM,SA FROM usr WHERE correo='" . $_GET['correo'] . "' AND password='". $_GET['password'] . "' AND estatus=1");
             if(!$resultado){
 					$data="Error";
 			}
@@ -21,7 +21,7 @@ $data="Error";
 
 }
                 else{
-                    $array= array("nombre"=>$row[2]);
+                    $array= array("nombre"=>$row[2],"ATC"=>$row[3],"CPM"=>$row[4],"SA"=>$row[5]);
                     $data=json_encode($array);
                 }
         }
